@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+        <section id="date"></section>
+        <section id="weather"></section>
+        <section id="password">
+            <input type="number" min="12" max="50" name="paswwordLength" id="paswwordLength" value="12">
+            <button id="buttonPasword">Generar contraseña</button>
+            <div id="passResult" class="passResult"></div>
+        </section>
+        <section id="links"></section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/date.js"></script>
+    <script src="./js/passwordGenerator.js"></script>
+</body>
+</html>

@@ -15,7 +15,14 @@
             <button id="buttonPasword">Generar contraseña</button>
             <div id="passResult" class="passResult"></div>
         </section>
-        <section id="links"></section>
+        <section id="links">
+            <form action="addlinks">
+                <input type="text" id="linkName" placeholder="Nombre del Enlace">
+                <input type="text" id="linkUrl" placeholder="Escribe el enlace">
+                <input type="button" id="addLinkBtn" value="Añadir enlace">
+            </form>
+            <div id="linkList"></div>
+        </section>
     </main>
     <footer>
 
@@ -23,5 +30,6 @@
     <script src="./js/date.js"></script>
     <script src="./js/passwordGenerator.js"></script>
     <script src="./js/weather.js"></script>
+    <script src="./js/links.js"></script>
 </body>
 </html>

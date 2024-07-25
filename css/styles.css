@@ -44,8 +44,13 @@ table {
 
 /*____________________________________________________________*/
 
-body{
-	background-color: black;
+body {
+	background-color: #000;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all .6s ease;
 }
 
 .headermain{
@@ -53,6 +58,12 @@ body{
 	justify-content: center;
 	align-items: center;
 	height: 10vh;
+}
+
+.sectionOne{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*style date and hour*/

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>  
+    <header class="headermain">
+        <div>
+            <a href="../index.html"><img src="../assets/home.png" alt="Ir a pagina de enlaces" class="goHome"></a>
+        </div>
+    </header>
+    <main class="mainOne">
+        <div class="sectionOne">
+            <section id="links" class="links sizeBox">
+                <h2>Añade un enlace de interes</h2>
+                <form action="addlinks" class="input">
+                    <input type="text" id="linkName" placeholder="Nombre del Enlace">
+                    <input type="text" id="linkUrl" placeholder="Escribe el enlace">
+                    <input type="button" id="addLinkBtn" value="Añadir enlace">
+                </form>
+                <ol id="linkList" class="linkList sizeBox"></ol>
+            </section>
+        </div>
+    </main>
+    <footer class="mainfooter">
+        <nav>
+            <div>
+                <ol>
+                    <li><a href="../html/date.html"><img src="../assets/clock.png" alt="Ir a pagina de la hora"></a></li>
+                    <li><a href="../html/weather.html"><img src="../assets/weather.png" alt="Ir a pagina del tiempo"></a></li>
+                    <li><a href="../html/password.html"><img src="../assets/lock.png" alt="Ir a pagina de generador de contraseñas"></a></li>
+                </ol>
+            </div>
+        </nav>
+    </footer>
+    <script src="../js/date.js"></script>
+    <script src="../js/passwordGenerator.js"></script>
+    <script src="../js/weather.js"></script>
+    <script src="../js/links.js"></script>
+</body>
+</html>

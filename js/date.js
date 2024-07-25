@@ -14,7 +14,7 @@ const getHour = () => {
     const hour = formatDate(new Date().getHours())
     const minute = formatDate(new Date().getMinutes())
     const second = formatDate(new Date().getSeconds())
-    const template = `<div>${hour}:${minute}:${second}</div>`;
+    const template = `<h2>${hour}:${minute}:${second}</h2>`;
     return template
 }
 
@@ -23,7 +23,7 @@ const getDay = () => {
     const day = formatDate(new Date().getDate())
     const month = formatDate(new Date().getMonth() + 1)
     const year = formatDate(new Date().getFullYear())
-    const template = `<div>${day}/${month}/${year}</div>`
+    const template = `<p>${day}/${month}/${year}</p>`
     return template
 }
 

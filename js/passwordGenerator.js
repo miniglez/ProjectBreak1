@@ -44,7 +44,7 @@ buttonPasword.addEventListener("click", () => {
     }while(!pos0 && !pos1 && !pos2 && !pos3)
     console.log(truePassword)
     const temmplate = `
-                        Contrseña:
+                        <p>Contrseña generada:<p>
                         <span>${truePassword}</span>
                     `
     passResult.innerHTML = temmplate

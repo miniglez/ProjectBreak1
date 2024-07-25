@@ -1,4 +1,326 @@
-body{
-    background-color: rgb(66, 66, 66);
-    color: white;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*____________________________________________________________*/
+
+.headermain{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+
+/*style date and hour*/
+.date{
+	width: 200px;
+	height: 100%;
+	text-align: center;
+}
+
+.date h2{
+	font-size: 52px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+
+.date p{
+	font-size: 24px;
+}
+
+/*Style main setting*/
+.main{
+    display: flex;
+    justify-content: space-between;
+	height: 80vh;
+	width: 100wh;
+}
+
+.section {
+	background-color: black;
+	height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.one {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+}
+
+.one section {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sizeBox{
+	width: 450px;
+	padding: 30px;
+	border-radius: 25px;
+	background-color: #3f3f3fce;
+	color: white;
+}
+
+/*Style weather*/
+.weather {
+	display: flex;
+	flex-flow: column;
+}
+
+.currentTime h2{
+	margin-left: 10px;
+	font-size: 25px;
+}
+
+.currentTime p{
+	margin-left: 10px;
+	font-size: 20px;
+	color: #cc8b00;
+}
+
+.currentTimeData{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 20px;
+}
+
+.currentTimeData img{
+	height: 100px;
+}
+.currentTimeData span{
+	font-size: 60px;
+}
+
+.weather ul{
+	display: flex;
+	overflow-x: scroll;
+	height: 130px;
+	width: 98%;
+	gap: 15px;
+	border: .3px #ffffff33 solid;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+.weather ul li {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+/*Scrollbar style*/
+.weather ul::-webkit-scrollbar {
+	width: 0px;
+}
+
+.weather ul::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.weather ul::-webkit-scrollbar-thumb {
+	background: #b8b8b888;
+	border-radius: 15px;
+}
+
+/*Paswword Style*/
+
+.password {
+	display: flex;
+	gap: 15px;
+	flex-flow: column;
+	height: 220px;
+}
+
+.password h2 {
+	font-size: 35px;
+}
+
+.password p{
+	font-size: 20px;
+}
+
+.inputs{
+	height: 35px;
+}
+
+.password input{
+	height: 93%;
+	border-style: none;
+	border-radius: 5px;
+	padding: 0 0 0 10px;
+	font-size: 18px;
+}
+
+#buttonPasword{
+	height: 97%;
+	border-style: none;
+	border-radius: 5px;
+	padding: 0 15px;
+	background-color: #369eff;
+	font-size: 17px;
+	color: white;
+	cursor: pointer;
+}
+
+#buttonPasword:hover{
+	background-color: #2e7cc5;
+}
+
+.passResult p{
+	font-size: 30px;
+}
+
+.passResult span{
+	font-size: 17px;
+	color: #cc8b00;
+}
+
+/*Liks Style*/
+.links {
+	height: 600px;
+	width: 500px;
+	display: flex;
+	flex-flow: column;
+	gap: 15px;
+}
+
+.links h2{
+	font-size: 35px;
+}
+
+.links form{
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+}
+
+.links input{
+	height: 30px;
+	border: none;
+	padding: 0 10px;
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+#addLinkBtn{
+	background-color: #369eff;
+	color: white;
+	cursor: pointer;
+}
+
+#addLinkBtn:hover{
+	background-color: #2e7cc5;
+}
+
+.linkList {
+	height: 75%;
+	width: 88%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.linkList{
+	overflow: scroll;
+}
+
+.linkList li{
+	background-color: #7e7e7e;
+	height: 40px;
+	padding: 0 10px;
+	position: relative;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.removeButton{
+	height: 20px;
+	width: 20px;
+	border: none;
+	margin: 0px;
+	border-radius: 50%;
+	font-size: 10px;
+	top: -10px;
+	right: -10px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+
+/*Scrollbar style*/
+.linkList::-webkit-scrollbar {
+	width: 20px;
+	background: transparent;
+}
+
+.linkList::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 10px;
+}
+
+.linkList::-webkit-scrollbar-thumb {
+	background: #b8b8b888;
+	border-radius: 10px;
 }

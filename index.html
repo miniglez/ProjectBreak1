@@ -7,22 +7,41 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <main>
-        <section id="date"></section>
-        <section id="weather"></section>
-        <section id="password">
-            <input type="number" min="12" max="50" name="paswwordLength" id="paswwordLength" value="12">
-            <button id="buttonPasword">Generar contraseña</button>
-            <div id="passResult" class="passResult"></div>
-        </section>
-        <section id="links">
-            <form action="addlinks">
-                <input type="text" id="linkName" placeholder="Nombre del Enlace">
-                <input type="text" id="linkUrl" placeholder="Escribe el enlace">
-                <input type="button" id="addLinkBtn" value="Añadir enlace">
-            </form>
-            <div id="linkList"></div>
-        </section>
+    <header class="headermain">
+        <div>
+            <section id="date" class="date"></section>
+        </div>
+    </header>
+    <main class="main">
+        <div class="section">
+            <div class="one">
+                <section>
+                    <div id="weather" class="weather sizeBox"></div>
+                </section>
+                <section>
+                    <div id="password" class="password sizeBox">
+                        <h2>Crea una contraseña segura</h2>
+                        <p>Selecciona el numero de caracteres</p>
+                        <div class="inputs">
+                            <input type="number" min="12" max="50" name="paswwordLength" id="paswwordLength" value="12">
+                            <button id="buttonPasword">Generar contraseña</button>
+                        </div>
+                        <div id="passResult" class="passResult"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="section two">
+            <section id="links" class="links sizeBox">
+                <h2>Añade un enlace de interes</h2>
+                <form action="addlinks" class="input">
+                    <input type="text" id="linkName" placeholder="Nombre del Enlace">
+                    <input type="text" id="linkUrl" placeholder="Escribe el enlace">
+                    <input type="button" id="addLinkBtn" value="Añadir enlace">
+                </form>
+                <ol id="linkList" class="linkList sizeBox"></ol>
+            </section>
+        </div>
     </main>
     <footer>
 

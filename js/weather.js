@@ -3,20 +3,21 @@ const weather = document.getElementById("weather")
 const getWeather = async () => {
     const res = await fetch("https://api.weatherapi.com/v1/forecast.json?key=33d81377093f41c0b70181221241807&q=madrid&aqi=no")
     const data = await res.json()
-    console.log(data)
     const template =
     `
-        <div id="currentTime">
-            <h2>${data.location.name} / ${data.location.country}</h2>
-            <p>${data.current.condition.text}</p>
+        <div id="currentTime" class="currentTime">
             <div>
+                <h2>${data.location.name} / ${data.location.country}</h2>
+                <p>${data.current.condition.text}</p>
+            </div>
+            <div class="currentTimeData">
                 <img src=${data.current.condition.icon} alt="${data.current.condition.text}"/>
-                <span>${data.current.temp_c}º</span>
-                <ul>
+                <span>${data.current.temp_c} º</span>
+                <ol>
                     <li>Precipitaciones: ${data.current.precip_in}%</li>
                     <li>Humedad: ${data.current.humidity}%</li>
-                    <li>V. viento: ${data.current.condition.wind_kph}Km/h</li>
-                </ul>
+                    <li>Viento: ${data.current.wind_kph} Km/h</li>
+                </ol>
             </div>
         </div>
     `
@@ -40,7 +41,6 @@ const nextDay = (data) => {
         elementLi.insertAdjacentElement("beforeend", elementP)
         elementUl.insertAdjacentElement("beforeend", elementLi)
     }
-    console.log(elementUl)
     return elementUl
 }
 

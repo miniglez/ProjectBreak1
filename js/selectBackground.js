@@ -13,7 +13,6 @@ const selectBackground = () => {
     if (count > 10){
         count = 1
     }
-    console.log("Termina la funcion")
 }
 
 selectBackground()

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,6 +53,12 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     transition: all .6s ease;
+	font-family: "Poppins", sans-serif;
+  	font-weight: 400;
+}
+input{
+	font-family: "Poppins", sans-serif;
+  	font-weight: 400;
 }
 
 .headermain{
@@ -76,13 +84,18 @@ body {
 }
 
 .date h2{
-	font-size: 52px;
+	font-size: 46px;
 	padding-top: 5px;
 	padding-bottom: 7px;
 }
 
 .date p{
-	font-size: 24px;
+	font-size: 20px;
+}
+.dateclass {
+	display: flex;
+	flex-flow: column;
+	gap: 15px
 }
 
 /*Style main setting*/
@@ -129,12 +142,12 @@ body {
 
 .currentTime h2{
 	margin-left: 10px;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .currentTime p{
 	margin-left: 10px;
-	font-size: 20px;
+	font-size: 17px;
 	color: #cc8b00;
 }
 
@@ -146,10 +159,10 @@ body {
 }
 
 .currentTimeData img{
-	height: 100px;
+	height: 80px;
 }
 .currentTimeData span{
-	font-size: 60px;
+	font-size: 55px;
 }
 
 .weather ul{
@@ -189,15 +202,15 @@ body {
 	display: flex;
 	gap: 15px;
 	flex-flow: column;
-	height: 220px;
+	height: 200px;
 }
 
 .password h2 {
-	font-size: 35px;
+	font-size: 30px;
 }
 
 .password p{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .inputs{
@@ -228,11 +241,11 @@ body {
 }
 
 .passResult p{
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .passResult span{
-	font-size: 17px;
+	font-size: 15px;
 	color: #cc8b00;
 }
 
